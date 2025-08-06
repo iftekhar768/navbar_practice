@@ -1,23 +1,47 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: #282A35;
-    color: white;
+#navbar {
+  background-color: #282A35;
+  color: white;
+  padding: 10px;
 }
-li{
-    display: inline;
-    font-weight: bold;
-    margin: 2px;
-    padding: 18px;
-    list-style: none;
+
+#btn {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #282A35;
+  color: wheat;
+  cursor: pointer;
 }
-@media screen and (max-width: 800px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-    }
-    li{
-        display: block;
-    }
+
+#unli {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#unli li {
+  font-weight: bold;
+  padding: 17px;
+
+  border-radius: 4px;
+}
+
+
+#navbar.vertical {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  
+}
+
+#navbar.vertical #unli {
+  flex-direction: column;
+  gap: 5px;
 }
